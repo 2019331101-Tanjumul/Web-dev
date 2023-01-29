@@ -1,0 +1,130 @@
+
+body{ 
+    background: radial-gradient(circle,rgb(173, 124, 238) , rgb(129, 230, 237));
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h3{ 
+    color:rgb(239, 226, 226);
+cursor: pointer;
+align-items: center;
+margin-top: 20px;
+margin: auto;
+margin-inline: 40px;
+
+}
+
+
+   h1{ 
+        color:rgb(242, 223, 223);
+        align-items: center;
+        margin: auto;
+        margin-bottom:40px;
+        font-size:36px;
+    }
+
+.log{ 
+    background-color: rgb(21, 240, 240); 
+ border-radius: 5px;
+    padding-left: 5px;   
+    opacity: 0.75; 
+margin-top:20px;
+    font-size: medium;
+padding-right:8px;
+padding-top:8px; 
+padding-bottom:8px; 
+text-align: center;
+border:none; 
+box-shadow: 0.5px 0.5px 10px rgb(28, 28, 44);
+
+
+}
+
+.log:hover{ 
+    
+    background-color: rgb(69, 232, 72);
+    color:black;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.4s;
+    border-width: 1px;
+
+}
+
+.login-con{ 
+    width: 300px;
+    background-color: rgb(147, 206, 199);
+    opacity: 0.20px;
+    padding:20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0.45px 10px 10px rgb(28, 28, 44);
+ 
+}
+.login_row{ 
+margin-top: 20px;
+display:flex; 
+flex-direction: column;
+}
+label{ 
+    margin-bottom:3px; 
+    padding: 10px;
+    border-radius:5px;  
+    border-width: 1px;
+    
+}
+
+input{ 
+ padding:10px; 
+ border-radius: 5px;
+ border-width: 1px;    
+
+}
+
+.plan_b{
+    color:rgb(132, 124, 124); 
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.login_social{ 
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.login_apple{ 
+    background-color: rgb(57, 49, 49);
+    color:white; 
+    border-radius: 5px;
+    padding:5px 10px;
+    border:none;
+}
+.login_google{ 
+    background-color: rgb(57, 49, 49);
+    color:white; 
+    border:none; 
+    border-radius: 5px;
+    padding:5px 10px;
+    margin-right:10px; 
+
+}
+.login_apple:hover{ 
+    transition: 0.3s; 
+    background-color: rgb(69, 232, 72);
+}
+.login_google:hover{ 
+    transition: 0.3s;
+    background-color: rgb(69, 232, 72);
+}
+
+.sign_up{ 
+    color:burlywood; 
+    text-decoration: none;
+}
+.welcome{ 
+  margin: auto;
+  margin-top: 20px;
+}
