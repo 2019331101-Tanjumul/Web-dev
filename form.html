@@ -18,14 +18,39 @@
 <label>Birthday:</label>
 <input type="date" required id="birthdate"><br>
 <label>Quantity :</label>
-<input type="number">
+<input type="number" value = "1" min="0" max="99"><br>
 <label>Mr</label>
 <input type="radio" id = "radiobutton" name="title"> 
 <label>Mrs</label>
 <input type="radio" id = "radiobutton" name="title"> 
 <label>Phd</label>
 <input type="radio" id = "radiobutton" name="title"> <br>
-<input type="submit"><br> 
+
+<label>Select Payment:</label>
+<select> 
+    <option id="visa">Visa Card</option>
+    <option id="master">Master Card</option>
+    <option id="paypal">Paypal Online</option>
+</select>
+
+<br><label for = "checked">Subscribr: </label>
+<input type="checkbox" id="checked"><br> 
+
+<label for = "comment"> Comment Box: </label> <br>
+<textarea type="comment" id="comment" rows="3" cols="22"></textarea> <br> 
+
+<label for = "file">Attach File</label> <br>
+<input type="file">
+
+
+
+
+
+
+
+
+
+<br><input type="submit"><br> 
 <input type="reset">
 </form>
     
