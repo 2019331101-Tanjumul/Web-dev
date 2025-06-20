@@ -122,3 +122,34 @@ let num8 = "7";
 
 console.log(num7!=num8); // we know that, it's not true due to one num and other is string 
 console.log(num7 !== num8)// it's now checking the datatypes
+
+//truely and falsy values 
+
+/** null , false , undefined  */
+
+
+//if else condition 
+
+console.log("if else conditon")
+
+let aged = 19; 
+
+if (aged > 18){ 
+    console.log(aged); 
+} else { 
+    console.log("User can't play Games"); 
+}
+
+
+//ternary operator 
+
+let agged = 18; 
+let drink = agged >=8 ? "Coffee":"MILK"
+console.log(drink); 
+
+//again:
+
+let aggged = 8; 
+let drinked = agged > 18 ?  "Coffee" : "MILk"; 
+
+console.log(drinked); 
