@@ -52,3 +52,21 @@ console.log(towName);
 let newString = firstnames.slice(0,4); /** basically it's doing here is it's just 
 taking the first 4 cahracters */
 console.log(newString); 
+
+
+//type of operator " variables "
+
+/* string , numberes and bool  {primitive datatypes actually } */
+
+let age = 22 ; 
+let firstNaame = " tanjumul"; 
+
+console.log(typeof(age)); 
+console.log(typeof(firstNaame)); 
+
+// let bool = false ;
+// console.log(typeof(bool)); 
+// 22 -> string as "22"
+Newage = age + " "; 
+console.log(Newage); 
+console.log(typeof(Newage)); 
