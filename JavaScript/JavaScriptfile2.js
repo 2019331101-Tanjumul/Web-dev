@@ -42,3 +42,5 @@ console.log(firstnames.length);
 fistName = firstnames.toUpperCase(); 
 console.log(fistName); 
 
+towName = firstnames.toLowerCase(); 
+console.log(towName); 
