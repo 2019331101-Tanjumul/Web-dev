@@ -113,3 +113,12 @@ console.log(num3==num4); // in == it's not checking the datatypes
 let num5 = 9; 
 let num6 = "9";
 console.log (num5 === num6); // here === is checking the datatypes also 
+
+// != and !==
+ 
+
+let num7 = 7 ; 
+let num8 = "7"; 
+
+console.log(num7!=num8); // we know that, it's not true due to one num and other is string 
+console.log(num7 !== num8)// it's now checking the datatypes
