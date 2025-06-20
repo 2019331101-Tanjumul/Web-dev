@@ -70,3 +70,13 @@ console.log(typeof(firstNaame));
 Newage = age + " "; 
 console.log(Newage); 
 console.log(typeof(Newage)); 
+
+//string to number 
+
+let mystr = +"33"; 
+console.log(typeof mystr); 
+
+let agee ="18"; 
+agee = Number(agee); 
+console.log(agee); 
+
