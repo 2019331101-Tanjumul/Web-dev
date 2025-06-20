@@ -92,5 +92,24 @@ console.log(myvariable);
 console.log(typeof myvariable); // ?? why object ?  bug or error ! it's null 
 
 
+//Bigint
 
+let numberrs = BigInt(123444334); 
+console.log(numberrs); 
 
+//booleans and comparison operators
+
+let num1 = 33; 
+let num2 = 8; 
+
+console.log(num1>num2);
+
+// == or ===
+
+let num3  = 7 ; 
+let num4 = "7"; 
+console.log(num3==num4); // in == it's not checking the datatypes
+
+let num5 = 9; 
+let num6 = "9";
+console.log (num5 === num6); // here === is checking the datatypes also 
