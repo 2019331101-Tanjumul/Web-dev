@@ -33,7 +33,7 @@ console.log(firstname[firstname.length-2]);
 
 //using trim method to wipe out the spaces in the string 
 
-let firstnames = "tanju"; 
+let firstnames = "tanjumul_alom_siam"; 
 console.log(firstnames.length); 
 
 firstnames = firstnames.trim(); 
@@ -44,3 +44,11 @@ console.log(fistName);
 
 towName = firstnames.toLowerCase(); 
 console.log(towName); 
+
+// Now in this i only want to have first of the words not from the last then 
+
+/**start index and ending  index then =  */
+
+let newString = firstnames.slice(0,4); /** basically it's doing here is it's just 
+taking the first 4 cahracters */
+console.log(newString); 
