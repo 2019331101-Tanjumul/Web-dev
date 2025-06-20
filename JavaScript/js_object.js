@@ -5,3 +5,5 @@ const car = {
 }; 
 
 console.log (car.type); // car.type is not a fucntion remember that
+
+console.log(car.model); 
