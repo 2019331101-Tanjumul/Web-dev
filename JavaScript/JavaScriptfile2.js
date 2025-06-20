@@ -80,3 +80,17 @@ let agee ="18";
 agee = Number(agee); 
 console.log(agee); 
 
+myNamee = "Tanjumul-Alom"; 
+myAge = 25; 
+
+let aboutMe = `My name is ${myNamee} and my age is ${myAge}`;
+console.log(aboutMe);
+
+let myvariable  = null ; 
+
+console.log(myvariable); 
+console.log(typeof myvariable); // ?? why object ?  bug or error ! it's null 
+
+
+
+
