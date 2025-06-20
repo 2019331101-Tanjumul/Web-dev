@@ -33,11 +33,12 @@ console.log(firstname[firstname.length-2]);
 
 //using trim method to wipe out the spaces in the string 
 
-let firstnames = "     tanju     "; 
+let firstnames = "tanju"; 
 console.log(firstnames.length); 
 
 firstnames = firstnames.trim(); 
 console.log(firstnames); 
 console.log(firstnames.length);
-
+fistName = firstnames.toUpperCase(); 
+console.log(fistName); 
 
