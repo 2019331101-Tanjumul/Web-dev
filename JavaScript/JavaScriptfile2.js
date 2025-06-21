@@ -153,3 +153,33 @@ let aggged = 8;
 let drinked = agged > 18 ?  "Coffee" : "MILk"; 
 
 console.log(drinked); 
+
+// and or operator 
+
+let befirst = "tanjumul" ; 
+let boyosh = 25; 
+
+if (befirst[0] === "t"){ 
+    console.log("Your name starts with t"); 
+} else { 
+    console.log("Your name is : tanjumul "); 
+}
+
+if(befirst[0]==="t" && boyosh > 15){ 
+    console.log("JavaScript is Real");
+} else{ 
+    console.log("Bar Bar error !!")
+}
+
+/**or Operator here ! */
+console.log("Or operator now : "); 
+
+let befirstt = "tanjumul Alom"; 
+let boyosht = 14;
+if(befirstt[0]==="t" || boyosht > 15){ 
+    console.log("JavaScript is Real : True");
+} 
+else{ 
+    console.log("Bar Bar error in Or operator : False !!")
+}  
+
