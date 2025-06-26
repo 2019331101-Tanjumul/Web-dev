@@ -10,7 +10,7 @@
 
 let winning_number = 19; 
 
-let userGuess = prompt("Guess a Number here !"); 
+let userGuess = +prompt("Guess a Number here !"); 
 console.log(userGuess); 
 
 console.log(typeof userGuess); 
