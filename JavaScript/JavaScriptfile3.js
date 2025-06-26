@@ -13,7 +13,15 @@ let winning_number = 19;
 let userGuess = +prompt("Guess a Number here !"); 
 console.log(userGuess); 
 
-console.log(typeof userGuess); 
+// console.log(typeof userGuess); 
 
+if(userGuess === winning_number){ 
+  console.log("Ur guess is right "); 
 
-
+} else { 
+  if(userGuess<winning_number){ 
+    console.log("Too low"); 
+  } else{ 
+    console.log("too high"); 
+  }
+}
