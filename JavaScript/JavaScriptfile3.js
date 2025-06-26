@@ -8,19 +8,12 @@
 // 17 too low 
 // 20 too high
 
+let winning_number = 19; 
 
-let winNum  = 16; 
+let userGuess = prompt("Guess a Number here !"); 
+console.log(userGuess); 
 
-if (winNum === 19){ 
-    console.log("Your guess is right");
-}
- else if (winNum === 17) { 
-    console.log(" 17 is too low");
- }
-  else if (winNum === 20 ){ 
-    console.log(" 20 is too high"); 
-  }
-  else {
-    console.log("you have guessed a wrong number"); 
-}
+console.log(typeof userGuess); 
+
+
 
