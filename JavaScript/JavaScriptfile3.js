@@ -26,3 +26,4 @@ if(userGuess === winning_number){
   }
 }
 //else if with loop 
+//loop and conditions 
