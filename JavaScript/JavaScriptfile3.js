@@ -25,3 +25,4 @@ if(userGuess === winning_number){
     console.log("too high"); 
   }
 }
+//else if with loop 
