@@ -13,7 +13,10 @@
     for( let start = 1 ; start<=10; start++){ 
 
         if(start%2==0){ 
-        break;
+      continue; /** continue is use to skip that part.
+     and break will use to stop immediately to print the last one you must take and console out this 
+      before the loop so that it can grab before the loop starts. **/  
+      
     }
         console.log(start);
     }
