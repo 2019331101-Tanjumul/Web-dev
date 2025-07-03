@@ -8,13 +8,27 @@
 <body>
   <h1>Hell0 there !</h1>
     <script>
-        let num1 = Number(prompt("Enter Your Value"))
+       /** let num1 = Number(prompt("Enter Your Value"))
         if(num1%2==0){
                console.log(num1,"Even Catagory")
         }
         else{ 
             console.log("Not implemented in correct order ! ")
-        }
+        } **/ 
+
+         let player1 = Number(prompt("Please enter the exam mark !! "));
+      if(player1>= 60){ 
+        console.log("you are in first class", player1); 
+      } 
+      else if( player1>= 48){ 
+        console.log("Hurrah !! you are in the second class", player1)
+      }
+
+      else if (player1>33){ 
+        console.log("You passed !", player1);
+      } else{ 
+        console.log("YOu are a Failtush !!");
+      }
     </script>
 
 
