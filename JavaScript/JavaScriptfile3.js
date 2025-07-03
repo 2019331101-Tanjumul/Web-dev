@@ -18,6 +18,7 @@
 // if(userGuess === winning_number){ 
 //   console.log("Ur guess is right "); 
 
+<<<<<<< HEAD
 // } else { 
 //   if(userGuess<winning_number){ 
 //     console.log("Too low"); 
@@ -33,3 +34,14 @@ let tempInDegree = 50;
 
 
   
+=======
+} else { 
+  if(userGuess<winning_number){ 
+    console.log("Too low"); 
+  } else{ 
+    console.log("too high"); 
+  }
+}
+//else if with loop 
+//loop and conditions 
+>>>>>>> a96bf839196e4f9eb0fd214a6b8f35939b06725c
