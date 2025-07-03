@@ -16,7 +16,7 @@
 
 <script>
     
-    let signals = Number(prompt("Here put the numbr you see in the signal"))
+   /** let signals = Number(prompt("Here put the numbr you see in the signal"))
    switch (signals){
 
     case 1 : 
@@ -30,7 +30,30 @@
 
     default : 
     console.log("You have choosen the wrong number as the signal")
-   }
+    break; 
+   } **/ 
+
+   let userCh = prompt("Enter the string you see"); 
+   //this time i'm not using the Number , because i'm using the enter value as the number that's why .
+   
+  switch ( userCh) { 
+ 
+    case 'green': 
+    console.log("Time to GO son coz it's", userCh); break; 
+
+      case 'yellow': 
+    console.log("Get Ready @!", userCh); break; 
+
+      case 'red': 
+    console.log("Time to stop son coz it's", userCh); break; 
+  
+    default : 
+    console.log("You have entered a wrong string here ! ")
+
+  }
+
+
+
 
 </script>
 </html>
