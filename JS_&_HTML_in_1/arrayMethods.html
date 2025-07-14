@@ -36,10 +36,24 @@ let o = [459,"tanju",593,"T"];
 let newArr = n.concat(o); 
 console.log(newArr); // [10,20,40,50,60,50,459,"tanju",593,"T"] -- like this it will show 
 
+//splice will delete from an array and can be add new element to it also !
 
+let p = [33,4,5,6,7,83,4,44];
+console.log(p)
+p.splice(3,2); //this means in position 3 of the index [as a pointer think the first one ] then delete from there to two elemet :: 6,7 will be deleted
+console.log(p); // [33,4,5,83,4,44]
 
+//now it's adding part here :: [it's calling the previous cutted array]
 
+p.splice(1,2,77,88,99)
+console.log(p); //[33,4,5,83,4,44] -> [33,77,88,99,83,4,44] i have inserted 3 elements 
 
+//Use of slice : 
+
+let q = [30 ,39,50,66, 4]; 
+
+let newAArry = q.slice(0,2);
+console.log(newAArry); // it's basically getting the declared indexed elements from the array !
 
 
 
