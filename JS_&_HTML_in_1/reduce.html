@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+<body>
+    <h3>hello back back</h3>
+</body>
+
+<script>
+
+/*with the help of this i can make a total of every inserted values on the array with ease , like storing and adding the next , also 
+similler to others like : map , filter here is the two ways to solve like others curly bracket and without it */
+
+
+
+let l = [10,20,30,40,50,60,70,80,90]; 
+
+//let Datanew = l.reduce((total , v, i)=>total+v ); 
+
+//console.log(Datanew); 
+
+/*way number 2*/
+
+let Datanew2 = l.reduce((total , v , i)=>{ 
+    return total+v; 
+});
+
+console.log(Datanew2); 
+</script>
+</html>
