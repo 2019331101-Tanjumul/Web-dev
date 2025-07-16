@@ -10,8 +10,14 @@
 </body>
 
 <script>
+
+    
     //map basically takes the existing array of mine and do the changes over it , how this works actually. 
-let l = [10, 20, 30 , 40 ,50]; 
+    
+    /*Map basically does these 3 things , it makes a new array , it never changes any values on the existing array , it demands a 
+    callback function on the map */
+
+    let l = [10, 20, 30 , 40 ,50]; 
 
 let finalAns = l.map((v,i)=>{ 
 return v+5; //without return undefined will be shown
