@@ -13,7 +13,9 @@
     //map basically takes the existing array of mine and do the changes over it , how this works actually. 
 let l = [10, 20, 30 , 40 ,50]; 
 
-let finalAns = l.map((v,i)=> v+5 );
+let finalAns = l.map((v,i)=>{ 
+return v+5; //without return undefined will be shown
+} );
 
 console.log(finalAns);
 </script>
