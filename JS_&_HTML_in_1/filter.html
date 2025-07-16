@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <h1>Workign on FILTER</h1>
+</body>
+
+<script>
+
+    //filter isn't changeable , it only returns it's elements itself 
+    /* it is same as the mehthod i use in map , only works here with the elements here , now , 
+    i can see like the l element is  showing that with a mixed numbers , in the same way it demans a callback function in the filter prebuilt ,
+    function , now v and i is the value and the iteration respectively */
+
+    let l = [1,2,3,4,5,6,7,8,9,0]; 
+
+let filterData = l.filter(  (v,i)=>{ 
+    return v%2==0
+} );
+
+console.log(filterData);
+
+
+
+
+
+
+</script>
+</html>
