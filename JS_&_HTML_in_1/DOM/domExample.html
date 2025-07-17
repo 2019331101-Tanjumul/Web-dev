@@ -8,15 +8,27 @@
 <body>
 
     <h1 id="heading">Welcome <u>to</u> Tanjumul_Learn</h1>
-    <h3>Welcoem to my daily Learning !! </h3>
+    <h3>Welcome to my daily Learning !! </h3>
+ <p id="outputt">
 
+ </p>
     
 </body>
 <script>
 
-let heading = document.getElementById('heading'); 
+let heading = document.getElementById('heading');  // just to take the value of the elements of h1
+let paragraaph = document.getElementById('outputt'); // taking the values of the  p tag
 
-console.log(heading.innerText); 
+console.log(heading.innerText);  // taking the inner texts of the tag 
+console.log(heading.innerHTML);  // taking the whole tag of the called codes 
+
+
+paragraaph.innerHTML=heading.innerHTML  // just asssigning the heading value to paragraaph ; 
+
+console.log(paragraaph.innerHTML)  // calling the output here 
+
+//now i want to store my full inner html to a paragraph or a tag then i will do : 
+
 </script>
 
 </html>
