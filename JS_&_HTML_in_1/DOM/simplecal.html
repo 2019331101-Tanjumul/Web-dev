@@ -12,7 +12,7 @@
     num2 <input type="text" name="" class="input" placeholder="Enter the value 2 :">   <br/>
     num2 <input type="text" name="" class="input" placeholder="Enter the value 3 :">   <br/>
     <button>Save</button> 
-    <button class="btns">Reset</button>
+    <button class="btns" id="btns">Reset</button>
 </body>
 
 <script>
@@ -55,21 +55,22 @@ btn.addEventListener("click", ()=> {
 
  // just need to clear the inputs or gointo reset 
 
-      allInput[0].value =''; 
-      allInput[1].value = ''; 
+     // allInput[0].value =''; 
+     // allInput[1].value =''; 
  
-
-
-  
-  
-  
-
-
-
-  //console.log(input1_here+input2_here); 
+//console.log(input1_here+input2_here); 
 
 
 }); 
+let btns = document.querySelector("#btns"); 
+btns.addEventListener("click",()=>{ 
+
+    
+      allInput[0].value =''; 
+      allInput[1].value =''; 
+      allInput[2].value =''; 
+
+} )
 
 </script>
 
