@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+
+    num1 <input type="text" name="" class="input" placeholder="Enter the value 1 : ">   <br/>
+    num2 <input type="text" name="" class="input" placeholder="Enter the value 2 :">   <br/>
+    num2 <input type="text" name="" class="input" placeholder="Enter the value 3 :">   <br/>
+    <button>Save</button>
+</body>
+
+<script>
+  /*query selector and query selector all the two thing is here !
+  
+  query selector can address or get the theree , calss , id and tag name.
+  */
+let allinput = document.querySelector('.input'); // class = . example : .variable_name , id = # example : #first_name , tag name = direct pass example : p , h1
+console.log(allinput); // it's only returning the one first or only one , 
+
+//Now the use of querySelectorAll 
+
+let allinn = document.querySelectorAll('.input');
+console.log(allinn); 
+ //it is now showing as the node list , now: what is happening here is : it's getting the all input class named values to a node list which is basically an array here ! 
+ 
+</script>
+
+</html>
