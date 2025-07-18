@@ -38,9 +38,14 @@ let btn = document.querySelector("button") //here button is a tag that's why it'
 
 //i'm not applying here the onclick funciton but i will use the event listener here to work the same way ! 
 
-
+let allInput = document.querySelectorAll(".input");
 btn.addEventListener("click", ()=> { 
-    return alert("here i'm"); 
+    /*suppose now i want to  take the first 1 , 2, 3 here then i will do : */
+
+  let input1_here = allinn[0].value; // .value attribute will show the values of the first one !! 
+  let input2_here = allinn[1].value; // .value attribute will show the values of the second one !! 
+
+  console.log(input1_here , input2_here); // it will show the inputed values in the console, side by side 
 }); 
 
 </script>
