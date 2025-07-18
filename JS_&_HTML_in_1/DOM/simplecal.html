@@ -42,10 +42,10 @@ let allInput = document.querySelectorAll(".input");
 btn.addEventListener("click", ()=> { 
     /*suppose now i want to  take the first 1 , 2, 3 here then i will do : */
 
-  let input1_here = allinn[0].value; // .value attribute will show the values of the first one !! 
-  let input2_here = allinn[1].value; // .value attribute will show the values of the second one !! 
+  let input1_here = Number(allInput[0].value); // .value attribute will show the values of the first one !! converting the string in to the number here is the way !
+  let input2_here = Number(allInput[1].value); // .value attribute will show the values of the second one !!  used the Number to convert this string in the number
 
-  console.log(input1_here , input2_here); // it will show the inputed values in the console, side by side 
+  console.log(input1_here , input2_here); // it will show the inputed values in the console, side by side
 }); 
 
 </script>
