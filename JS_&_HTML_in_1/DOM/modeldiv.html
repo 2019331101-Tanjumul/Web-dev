@@ -9,6 +9,8 @@
     body{ 
         display:flex;
         gap : 5px ; 
+        flex-direction: column; /* Stacking everything in the vertical mode :  */
+        align-items: center; 
     }
     .main{ 
         width: 300px;
@@ -28,6 +30,7 @@
     button{ 
      display: block;
      padding:10px 25px; 
+     
      margin: auto; 
     }
 </style>
@@ -38,10 +41,10 @@
 
 <body>
     <div class="container">
-<div class="main"></div>
-<div class="main"></div>
-<div class="main"></div>
-<div class="main"></div>
+<div class="main">1</div>
+<div class="main">2</div>
+<div class="main">3</div>
+<div class="main">4</div>
    
     </div>
  <button>Change Color</button>
@@ -52,10 +55,28 @@
 <script>
                                                             //3hr:54min:25s  -----------> Very importent here , now just learn from here !
 let btn = document.querySelector("button"); 
+let allboxes = document.getElementsByClassName('main');
+
+//i could have used the document.querySelectorAll() ; it would have given me the same but the nodelist , but the use of html collectin it is similer just the funcitons are limited in the html collection.
+
 
 btn.addEventListener("click",()=>{ 
-    alert("hello it's working fine : Tanjumul"); 
-})
+    //alert("hello it's working fine : Tanjumul"); 
+    console.log(allboxes); //it shows like this : {  "0": {}, "1": {},"2": {}, "3": {}  }
+
+    //now it will take the first box by 0th element box now : 
+
+    allboxes[0].style.backgroundColor ="yellow"; // changing the background of the first box here , now the allbox[0] is the array element, .style (calling to change ), backgroundColor (the camelcase is must in the 2 word css ); 
+
+
+    allboxes[1].style.backgroundColor="green"; 
+    allboxes[2].style.backgroundColor="blue"; 
+  
+});
+
+
+
+
 
 
 </script>
