@@ -63,11 +63,13 @@ top:50%;
     
   </div>
    <button>Show Now</button>
+   <button id="btn1">Toggle here </button>
 </body>
 <script>
 let btn = document.querySelector("button"); // here button is the button tag 
 let modal = document.querySelector(".modal"); //here .modal is the class 
 let closeIcon = document.querySelector(".modal h2 span");
+//let btns2 = document.querySelector(btn2);
 
 btn.addEventListener("click", ()=> { 
 
@@ -80,7 +82,10 @@ btn.addEventListener("click", ()=> {
 
     closeIcon.addEventListener("click", ()=>{
         
-       modal.classList.remove('showModal'); /* with  the help of the class list 'remove' here , this is what i was wanted to learn  basically : 
+       modal.classList.remove('showModal'); 
+
+
+       /* with  the help of the class list 'remove' here , this is what i was wanted to learn  basically : 
        the chart was coming down and then i have to put it close back with the use of the cross logo right ? 
        i previously defined the .showModal which is used to represent it with only top of 50%; 
        but as you can see there is a top of -500 in the modal which is currently sitting outside of the screen now. that's why i previously added  to 
@@ -91,8 +96,21 @@ btn.addEventListener("click", ()=> {
 
 
     });
- 
 
+    
+       /* just unbelieveable , the thing i was searching for is toggle , here with the help of this i can measure and work things efficiently , now , 
+        if i do like this :*/
+
+
+        /*btns2.addEventListener("click", ()=>{ 
+            modal.classList.toggle(".showModal")
+        }); */
+
+document.querySelector('#btn1').addEventListener("click",()=>{ 
+    modal.classList.toggle('showModal');
+})
+ 
+ 
 </script>
 
 </html>
