@@ -21,7 +21,7 @@
     left : 50%; 
 
     transform:translate(-50%, -50%);
-  
+   transition: 0.5s;
    
     
 }
@@ -32,7 +32,7 @@
    font-size: 20px;
    padding: 10px 0px; 
    position: relative;
-   transition: 0.5s;
+   
 
 }
 
@@ -66,7 +66,10 @@ let modal = document.querySelector(".modal"); //here .modal is the class
     
 btn = addEventListener("click", ()=> { 
 
-    alert("Hello")
+     // js gives us a class list : add ,remove or toggle 
+
+     modal.classList.add('showModal') // here the modal class will be triggerd as showModal , only when the button is been pressed , 
+     //unless it's now outside of the chart , it's -500px; at the top now , 
 
     });
 
