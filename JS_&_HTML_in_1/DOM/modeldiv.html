@@ -59,7 +59,7 @@ let allboxes = document.getElementsByClassName('main');
 
 //i could have used the document.querySelectorAll() ; it would have given me the same but the nodelist , but the use of html collectin it is similer just the funcitons are limited in the html collection.
 
-
+/*
 btn.addEventListener("click",()=>{ 
     //alert("hello it's working fine : Tanjumul"); 
     console.log(allboxes); //it shows like this : {  "0": {}, "1": {},"2": {}, "3": {}  }
@@ -75,8 +75,27 @@ btn.addEventListener("click",()=>{
   
 });
 
+*/ 
 
-//04:02:45 
+//if i want to use the for of method  : i will use it to access one calss items at once , here i want to access or command all the items at one click 
+
+btn.addEventListener("click", () => { 
+
+
+    for(let items of allboxes){ //here the item is a variable , it hepls to move in loop
+   
+        //now we will use only the items to access all the elements : 
+
+        items.style.background="yellow";
+        
+console.log(allboxes);
+   
+    }
+  
+
+})
+
+//04:02:45 // started  from ther from my break : "web dev symplified " youtube channel 
 
 
 
@@ -84,4 +103,4 @@ btn.addEventListener("click",()=>{
 
 </script>
 
-</html>
+</html> 
