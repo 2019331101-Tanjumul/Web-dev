@@ -49,6 +49,10 @@ top:50%;
 
 }
 
+.hideModal{ 
+    top: -500px; 
+}
+
 </style>
 <body>
     
@@ -63,15 +67,31 @@ top:50%;
 <script>
 let btn = document.querySelector("button"); // here button is the button tag 
 let modal = document.querySelector(".modal"); //here .modal is the class 
-    
-btn = addEventListener("click", ()=> { 
+let closeIcon = document.querySelector(".modal h2 span");
+
+btn.addEventListener("click", ()=> { 
 
      // js gives us a class list : add ,remove or toggle 
 
      modal.classList.add('showModal') // here the modal class will be triggerd as showModal , only when the button is been pressed , 
-     //unless it's now outside of the chart , it's -500px; at the top now , 
+     //unless it's now outside of the chart , it's -500px; at the top now
 
     });
+
+    closeIcon.addEventListener("click", ()=>{
+        
+       modal.classList.remove('showModal'); /* with  the help of the class list 'remove' here , this is what i was wanted to learn  basically : 
+       the chart was coming down and then i have to put it close back with the use of the cross logo right ? 
+       i previously defined the .showModal which is used to represent it with only top of 50%; 
+       but as you can see there is a top of -500 in the modal which is currently sitting outside of the screen now. that's why i previously added  to 
+       a button with the show option , now  here is the thing : i will make it back to the previous stated before i pressed the button now , 
+       doing .. the  modal.classList.remove option i just passed the showModal , here it's working like ::: it's going back to the previous states with 
+       the click of the span which is cross .
+       */
+
+
+    });
+ 
 
 </script>
 
