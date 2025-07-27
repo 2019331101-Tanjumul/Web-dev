@@ -63,13 +63,13 @@ top:50%;
     
   </div>
    <button>Show Now</button>
-   <button id="btn1">Toggle here </button>
+   <button class="btn1">Toggle here </button>
 </body>
 <script>
 let btn = document.querySelector("button"); // here button is the button tag 
 let modal = document.querySelector(".modal"); //here .modal is the class 
 let closeIcon = document.querySelector(".modal h2 span");
-let btns2 = document.querySelector('#btn1');
+let btns2 = document.querySelector('.btn1');
 
 btn.addEventListener("click", ()=> { 
 
@@ -106,11 +106,13 @@ btn.addEventListener("click", ()=> {
             modal.classList.toggle("showModal")
         }); 
 
-        /*
+   /*     
 document.querySelector('#btn1').addEventListener("click",()=>{ 
     modal.classList.toggle('showModal');
-})
- */
+}) 
+// here i used the #btn1 coz , in the line number : 72 i used class , if i had used id = then i will use the # otherwise i //would have been useing the . option
+*/
+ 
  
 </script>
 
