@@ -69,7 +69,7 @@ top:50%;
 let btn = document.querySelector("button"); // here button is the button tag 
 let modal = document.querySelector(".modal"); //here .modal is the class 
 let closeIcon = document.querySelector(".modal h2 span");
-//let btns2 = document.querySelector(btn2);
+let btns2 = document.querySelector('#btn1');
 
 btn.addEventListener("click", ()=> { 
 
@@ -102,14 +102,15 @@ btn.addEventListener("click", ()=> {
         if i do like this :*/
 
 
-        /*btns2.addEventListener("click", ()=>{ 
-            modal.classList.toggle(".showModal")
-        }); */
+        btns2.addEventListener("click", ()=>{ 
+            modal.classList.toggle("showModal")
+        }); 
 
+        /*
 document.querySelector('#btn1').addEventListener("click",()=>{ 
     modal.classList.toggle('showModal');
 })
- 
+ */
  
 </script>
 
