@@ -6,21 +6,22 @@
     <title>DOM Tag Works</title>
 </head>
 <body>
-    <p>Hello</p>
-    <p>I'm</p>
-    <p>Tanju</p>
+    <p class="para">Hello</p>
+    <p class="para">I'm</p>
+    <p class="para">Tanju</p>
 
-    <p>Approachint to </p>
+    <p class="para">Approachint to </p>
 
-     <p>Future</p>
+     <p class="para">Future</p>
 </body>
 
 <script>
-  let pAlltag = document.getElementsByTagName("p"); 
+  let pAlltag = document.getElementsByClassName("para"); 
+  console.log(pAlltag);
 
   console.log(pAlltag[1].innerHTML);  // console.log(pAlltag.innerHTML); A html collection to show all the elements at once !! 
 
-
+    
 
 
 </script>
