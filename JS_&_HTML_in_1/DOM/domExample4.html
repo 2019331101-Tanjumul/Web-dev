@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector all</title>
+</head>
+<body>
+    <!-- /*it actually selects all the components at once*/ -->
+
+<h3>Welcome</h3>
+<h3>To</h3>
+<h3>the</h3>
+<h3>Wonders of Creation</h3>
+</body>
+
+
+<script>
+
+    let allheading = document.querySelectorAll("h3"); 
+    console.log(allheading); 
+
+/*it will create a node list while using the querySelectorAll . now here we will use for each :: on the 
+for each funcion , the  h3 will be your values and the number 0 ..... 3 will be your  index*/
+
+console.log(allheading[0].innerText); // it  will show the first h3 value 
+
+/* it will be  tough for me to collect all the document inner HTML or text at once without using the loop that's why i need to use 
+the forEach thing */
+
+allheading.forEach((items , index)=>{  // here items is a variable , index is the index
+    
+    console.log(items.innerHTML); 
+
+});
+</script>
+
+</html>
