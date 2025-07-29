@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Welcome to WS</h1>
-    <h1>This is the second h1 as testing</h1>
+    <h1 id="heading2">This is the second h1 as testing</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusantium nobis quam exercitationem consectetur. 
         Est distinctio non consequuntur eos error a molestiae nisi aperiam qui nemo repudiandae minus atque perspiciatis
          facere fuga nulla expedita, eveniet in maxime ut id. Mollitia ducimus perspiciatis earum debitis aperiam nesciunt 
@@ -20,7 +20,10 @@
 <script>
     let volvo = document.querySelector("h1"); //it works on everything , in class  , tag , id and everything you use to get in target
    console.log(volvo);
-
+   
+     let volvo2 = document.querySelector("#heading2"); 
+     console.log(volvo2); 
+     console.log(volvo2.innerText); 
 </script>
 
 </html>
