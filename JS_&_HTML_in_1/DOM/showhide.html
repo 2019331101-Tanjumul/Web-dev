@@ -18,8 +18,15 @@ let inputElement = document.querySelector("input");
 /*addressing just the buttons that's it ! <thng>.classlist.add/remove/toggle */ 
 
 btn.addEventListener("click",()=>{ 
-    inputElement.type = "text"; 
-    
+
+if (btn.innerHTML == "show"){ 
+        inputElement.type = "text"; 
+        btn.innerHTML = "hide"; 
+} else{ 
+    inputElement.type = "password";
+    btn.innerHTML = "show"
+}
+
 })
 
 </script>
