@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            padding: 0px; 
+            margin: 0px; 
+            font-family: sans-serif;
+            
+        }
+        h1{ 
+            text-align: center;
+            padding:50px; 
+        }
+        .faqMid{ 
+           max-width: 1000px;
+           margin:auto; 
+        }
+        .faqItm { 
+            border: 1px solid #ccc; 
+            margin-top: 20px;
+        }
+        .faqItm h3{ 
+            padding:15px; 
+            background-color: yellowgreen;
+            position : relative; 
+            cursor : pointer; 
+        }
+
+        .faqItm span{ 
+            position : absolute; 
+           right:0px;
+           padding-right: 15px;
+        }
+        .faqItm p{ 
+            font-size: 18px;
+            line-height: 20px;
+            padding:10px; 
+            display:none; 
+        }
+
+        .showAns{ 
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently asked questions</h1>
+    <div class="faqMid">
+<div class="faqItm"> 
+    <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span>  </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro laudantium beatae doloremque aperiam quas quae ullam laborum, et vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus enim pariatur! Veniam ea, quo debitis eveniet odio laudantium voluptatibus.</p>
+</div>
+
+<div class="faqItm"> 
+    <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span> </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro laudantium beatae doloremque aperiam quas quae ullam laborum, et vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius totam quas placeat reprehenderit quisquam pariatur. Odit, ullam labore. Nulla.  .</p>
+</div>
+
+<div class="faqItm"> 
+    <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span> </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro laudantium beatae doloremque aperiam quas quae ullam laborum, et vel  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum aliquam ullam molestiae fugiat beatae, aliquid corporis fugit voluptas totam soluta?.</p>
+</div>
+
+
+<div class="faqItm"> 
+    <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span> </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro laudantium beatae doloremque aperiam quas quae ullam laborum, et vel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nesciunt ipsa architecto reiciendis amet inventore dolorum in tempora officia pariatur! .</p>
+</div>
+
+</div>
+</body>
+<script>
+
+let QusAll = document.querySelectorAll(".faqItm h3");
+ 
+QusAll.forEach((item , index)=>{ 
+
+    item.addEventListener("click", ()=>{ 
+       
+        //working on the current Questions show - , hide + 
+        if(item.lastElementChild.innerHTML == "+"){ 
+            item.lastElementChild.innerHTML = "-"; 
+        } 
+        
+        else{ 
+            item.lastElementChild.innerHTML = "+"; 
+        }
+           // current quesion showing answers on this !
+        item.nextElementSibling.classList.toggle("showAns");
+
+
+    })
+
+}) 
+
+
+
+
+
+</script>
+</html>

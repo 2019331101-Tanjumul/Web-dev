@@ -15,18 +15,32 @@
 </head>
 <body>
     <div class="main">
-        <h1>welcome</h1>
+        <!-- <h1>welcome</h1>
         <button>Save</button>
-        <p>Welcome to WS</p>
+        <p>Welcome to WS</p> -->
+       <h1>Welcome</h1>
+       <button>Save</button>
+       <p>Welcome <b>to</b> <u>WS</u></p>
     </div>
 </body>
 <script>
     let btn = document.querySelector("button"); 
 btn.addEventListener("click",()=>{ 
-    btn.parentElement.remove(); /*it works on removing the whole div 
+    btn.parentElement.style.background = "yellow"; /*it works on removing the whole div 
     because the parent is the Div here or div here , thats why the use of addEventlistener worked 
     here on the div */
+    btn.previousElementSibling.innerHTML = "Tanjumu is Learning"; // it here changing the top of the parent element
+  
+   btn.nextElementSibling.style.fontSize = "50px"; // here it taking the only the last sibling of the parent class 
+   // using this we can change the individual elements of the div or the seciton , 
+   /*parentElement , previousElementSibling , nextElementSibling*/
+   console.log(btn.nextElementSibling);  // though the siblings of the divs are b , u tag , now if i want to see all then it will show me as html class 1 , 2 this way or we call it html collection
+   console.log(btn.nextElementSibling.children); 
+   console.log(btn.nextElementSibling); 
+   console.log(btn.nextElementSibling.lastElementChild); 
 })
+
+// another Childer or child 
 
 </script>
 </html> 
