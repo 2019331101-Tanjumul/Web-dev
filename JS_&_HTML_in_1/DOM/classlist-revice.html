@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{ 
+            padding:20px; 
+            font-size: 160px;
+            background-color: aqua;
+            color:red; 
+
+        }
+    </style>
+</head>
+<body>
+    <button class="css-a">CSS</button>
+    <button class="css-b">Add Class</button>
+    <button class="css-c">Remove Class</button>
+    <button class="css-d">Toggle Class</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed assumenda deserunt et aliquam consequatur, quam exercitationem perferendis officia excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolores aliquid accusamus, dolor eos nostrum provident reiciendis delectus doloribus modi?
+
+    </p>
+</body>
+
+<script>
+
+let button1 = document.querySelector(".css-a");
+let button2 = document.querySelector(".css-b"); 
+let button3 = document.querySelector(".css-c"); 
+let button4 = document.querySelector(".css-d"); 
+ 
+let para = document.querySelector("p"); 
+
+button1.addEventListener("click", ()=>{
+ 
+    if(para.style.color == "black"){ 
+        para.style.color = "red";
+
+    } else { 
+        para.style.color = "black"
+    }
+
+});
+
+button2.addEventListener("click",()=>{ 
+ para.classList.add("container");
+});
+
+button3.addEventListener("click",()=>{ 
+para.classList.remove("container"); 
+})
+
+
+button4.addEventListener("click",()=>{ 
+    para.classList.toggle("container")
+})
+</script>
+</html>
