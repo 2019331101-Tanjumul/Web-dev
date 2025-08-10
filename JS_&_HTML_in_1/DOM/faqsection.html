@@ -79,8 +79,15 @@ let QusAll = document.querySelectorAll(".faqItm h3");
  
 QusAll.forEach((item , index)=>{ 
 
+    
     item.addEventListener("click", ()=>{ 
        
+        QusAll.forEach((heading , i)=>{
+            if(index!==i){ //here is the twist , using the parent or the previous indexing her  
+                heading.nextElementSibling.classList.remove("showAns"); 
+            }
+        })
+
         //working on the current Questions show - , hide + 
         if(item.lastElementChild.innerHTML == "+"){ 
             item.lastElementChild.innerHTML = "-"; 
