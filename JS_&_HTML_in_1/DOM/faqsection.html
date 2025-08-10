@@ -83,6 +83,7 @@ QusAll.forEach((item , index)=>{
     item.addEventListener("click", ()=>{ 
        
         QusAll.forEach((heading , i)=>{
+            heading.lastElementChild.innerHTML = "+"; 
             if(index!==i){ //here is the twist , using the parent or the previous indexing her  
                 heading.nextElementSibling.classList.remove("showAns"); 
             }
