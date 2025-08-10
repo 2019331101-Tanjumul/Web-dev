@@ -15,10 +15,15 @@
      width: 30%;
      height: 100vh;
      background-color: #ccc;
-     right:0px; 
+     right:-500px; 
      position :fixed; 
      padding:40px; 
-    
+     top:0px;
+    transition: 0.9s;
+}
+.show-login{ 
+    right:0px; 
+    transition : 0.7s; 
 }
 .headingModal{
      margin-top: 40px; 
@@ -58,11 +63,22 @@
     border : none; 
     cursor: pointer;
 }
+.login-modal form p{ 
+    margin-top: 10px;
+}
+.login-modal span{ 
+    font-size: 45px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
-    <div class="login-modal"> 
+    <button id="noman">Login</button>
+
+    <div class="login-modal ">
+           <span>&times;</span> 
      <div class="headingModal">
+     
         <h3>Login</h3>
         <p>Use email, Instade</p>
       
@@ -73,15 +89,25 @@
             <label for="">Mobile Number :* </label>
            <input type="text">
             <button>login</button>
+            <p>New to the site ? <a href="">Create new account </a> </p>
 
         </form>
        
       </div>
       
     </div>
-    <button>Login</button>
+    
 </body>
 <script>
+   let btn = document.querySelector("#noman"); 
+   let modals = document.querySelector(".login-modal");
+   btn.addEventListener("click",()=>{ 
+       modals.classList.toggle("show-login");
+   })
 
+   let umt = document.querySelector("span"); 
+   umt.addEventListener("click", ()=>{ 
+    modals.classList.remove("show-login")
+   })
 </script>
 </html>
