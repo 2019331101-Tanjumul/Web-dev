@@ -15,11 +15,42 @@
      
     }
     h1 { 
-              text-align: center;
-        font-size: 40px; 
+        text-align: center;
         padding : 50px; 
 
     }
+        }
+        .faqItms { 
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            
+        }
+
+        .faqItms h3 { 
+            padding: 15px;
+            background-color: lightblue;
+            position : relative;
+            cursor : pointer;  
+        
+            
+        }
+
+        .faqItms h3 span { 
+            position: absolute; 
+            right : 15px; 
+        }
+
+        .faqItms p { 
+            padding: 15px;
+           line-height: 17px;
+           font-size: 17px;
+           display : none; 
+     
+          
+        }
+        .showA{ 
+            display : block !important; 
+           
         }
     </style>
 </head>
@@ -27,9 +58,74 @@
     <h1>Frequently Asked Questions</h1>
     <div class="main">
    
-     
+     <div class="faqItms">
+      
+        <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolores molestiae animi repudiandae, voluptatum repellendus vitae quo consectetur esse recusandae? Nemo facilis a soluta dicta distinctio doloremque voluptate nihil saepe molestiae, ex beatae similique perferendis.</p>
+    </div>
+      
+    <div class="faqItms">
+      
+        <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolores molestiae animi repudiandae, voluptatum repellendus vitae quo consectetur esse recusandae? Nemo facilis a soluta dicta distinctio doloremque voluptate nihil saepe molestiae, ex beatae similique perferendis.</p>
+    </div>
+
+     <div class="faqItms">
+      
+        <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolores molestiae animi repudiandae, voluptatum repellendus vitae quo consectetur esse recusandae? Nemo facilis a soluta dicta distinctio doloremque voluptate nihil saepe molestiae, ex beatae similique perferendis.</p>
+    </div>
+
+     <div class="faqItms">
+      
+        <h3>What is the time you really feel disguised in , Sylhet ? <span>+</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolores molestiae animi repudiandae, voluptatum repellendus vitae quo consectetur esse recusandae? Nemo facilis a soluta dicta distinctio doloremque voluptate nihil saepe molestiae, ex beatae similique perferendis.</p>
+    </div>
+
+    
        
 
     </div>
 </body>
+<script>
+    let Qall = document.querySelectorAll(".faqItms h3"); //just because of this it means it hovers on the h3 tag 
+
+
+    Qall.forEach((item, index)=>{ //then a loop 
+     
+
+         
+
+        item.addEventListener("click", ()=>{ // add even listener to all using the item although it calls all the index 
+        
+            Qall.forEach((itm , i)=>{
+                 itm.lastElementChild.innerHTML == "+"; 
+                 if(index!=i){
+                    itm.nextElementSibling.classList.remove("showA");
+                 }
+            })
+        
+       
+        
+  if(item.lastElementChild.innerHTML == "+"){ 
+    item.lastElementChild.innerHTML = "-";
+  } else{ 
+    item.lastElementChild.innerHTML ="+"; 
+  }
+   item.nextElementSibling.classList.toggle("showA"); // then toggoling the nextElementSibling here basically the "p" , by the showA class in cass.
+        
+        });
+
+    })
+
+
+   
+
+
+  
+    
+
+
+
+</script>
 </html>
