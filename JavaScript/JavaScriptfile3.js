@@ -52,6 +52,13 @@ a = document.queryselectorAll((index, i)=>{
 
   index.addEventListener("click",()=>{
 
+    if( index.nextElementChild.innerHTML == "+") { 
+        nextElementChild.innerHTML == "-"; 
+    } else { 
+      
+ nextElementChild.innerHTML == "+";
+    }
     
   })
 });
+
