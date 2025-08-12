@@ -45,3 +45,13 @@ let tempInDegree = 50;
 //else if with loop 
 //loop and conditions 
 >>>>>>> a96bf839196e4f9eb0fd214a6b8f35939b06725c
+
+let a ; 
+
+a = document.queryselectorAll((index, i)=>{
+
+  index.addEventListener("click",()=>{
+
+    
+  })
+});
