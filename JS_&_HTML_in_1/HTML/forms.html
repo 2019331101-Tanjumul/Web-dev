@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
- <!-- form , input , textarea , label , fieldset: Groups related elements , togather defines a 
+    <!-- form , input , textarea , label , fieldset: Groups related elements , togather defines a 
  selection of a form. -->
+    <fieldset> 
+    <form action="" method="">
 
- <form action="" method="">
+        <h2>Enquiry</h2>
 
-    <h2>Enquiry</h2>
+        <label for="">Name</label><br>
+        <input type="text" placeholder="This is your name section">
+        <br>
+        <label for="">Email</label> <br>
+        <input type="email" placeholder="@ input a email">
 
-    <label for="">Name</label><br>
-    <input type="text" placeholder="This is your name section">
-    <br>
-   <label for="">Email</label> <br>
-    <input type="email" placeholder="@ input a email">
+        
+        <!-- this is anothere way to create button -->
+
+        <label for="">Phone</label>
+        <br>
+        <input type="tel" pattern="[0-9]{11}" name="" id="" placeholder="press your number here ">
+       
+        <br>
+        <label for="">Leave message</label>
+        <br>
+        <textarea name="" id=""></textarea>
+
+         
     
-  <br>
-    <button>save</button>
 
-    <br>
 
-    <input type="submit" value="Submit">  <br>
-    <!-- this is anothere way to create button -->
 
-     <label for="">Phone</label>
-      <br>
-      <input type="tel" pattern="[0-9]{11}" name="" id="" placeholder="press your number here ">
+        <br>
+        <button>save</button>
 
+        <br>
+
+        <input type="submit" value="Submit"> <br>
     </form>
-
+</fieldset>
 </body>
+
 </html>
